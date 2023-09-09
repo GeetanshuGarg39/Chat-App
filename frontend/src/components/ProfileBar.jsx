@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProfileBar = () => {
+const ProfileBar = () => {
   return (
     <div class="h-[100vh] bg-slate-100 w-1/5 overflow-y-scroll scrollbar-hide">
       <div class="flex items-center justify-between h-24 p-6">
@@ -82,7 +82,7 @@ export const ProfileBar = () => {
         <h3 class="flex items-center justify-between">
           <span class="font-medium ">Groups in Common</span>
         </h3>
-        <div class="flex items-center gap-4 hover:bg-blue-100 hover:p-2 hover:font-semibold rounded-2xl transition-all">
+        <div class="flex items-center gap-4 bg-white hover:bg-blue-100 hover:-mx-4 hover:px-6 py-3 px-3 hover:font-semibold rounded-2xl transition-all">
           <div class="w-12 h-12 rounded-full overflow-hidden  flex items-center justify-center">
             <img
               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
@@ -93,7 +93,7 @@ export const ProfileBar = () => {
           <h3 class="">Developers</h3>
           
         </div>
-        <div class="flex items-center gap-4 ">
+        <div class="flex items-center gap-4 bg-white hover:bg-blue-100 hover:-mx-4 hover:px-6 py-3 px-3 hover:font-semibold rounded-2xl transition-all">
           <div class="w-12 h-12 rounded-full overflow-hidden  flex items-center justify-center">
             <img
               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
@@ -104,7 +104,7 @@ export const ProfileBar = () => {
           <h3 class="">Developers</h3>
           
         </div>
-        <div class="flex items-center gap-4 ">
+        <div class="flex items-center gap-4 bg-white hover:bg-blue-100 hover:-mx-4 hover:px-6 py-3 px-3 hover:font-semibold rounded-2xl transition-all">
           <div class="w-12 h-12 rounded-full overflow-hidden  flex items-center justify-center">
             <img
               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
@@ -115,7 +115,10 @@ export const ProfileBar = () => {
           <h3 class="">Developers</h3>
           
         </div>
+        
       </div>
     </div>
   );
 };
+
+export default ProfileBar;
