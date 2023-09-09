@@ -12,8 +12,7 @@ const MessageRecieved = () => {
             />
             </div>
         <div className="bg-white w-auto inline-block m-2 px-3 py-2 max-w-[480px] rounded-xl">
-          hello guys myself Geetanshu and i am working on a group project with
-          team members Ansh, Harkaran and Shubham
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis magnam voluptates? Itaque atque eum soluta est beatae maiores
         </div>
       </div>
     </div>
