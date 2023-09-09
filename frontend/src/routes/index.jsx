@@ -5,6 +5,7 @@ import AuthLayout from "../layouts/auth";
 import Dashboard from "../pages/dashboard/Dashboard";
 import { DEFAULT_PATH } from "../config";
 import Group from "../pages/dashboard/Group";
+import DashboardLayout from "../layouts/dashboard";
 
 export default function Router() {
     let routes = useRoutes([
@@ -18,6 +19,7 @@ export default function Router() {
         },
         {
             path: "/",
+            element: <DashboardLayout/>,
             children: [
                 { element: <Navigate to={DEFAULT_PATH} replace />, index: true },
                 { path: "app", element: <Dashboard/> },
