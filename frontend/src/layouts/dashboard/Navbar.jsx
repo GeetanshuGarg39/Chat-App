@@ -1,4 +1,5 @@
 import React from 'react'
+import Profile from './Profile'
 
 const Navbar = () => {
     return (
@@ -28,8 +29,8 @@ const Navbar = () => {
                     </a></li>
                 </ul>
             </div>
-            <a href='#' class='w-10 h-10 rounded-lg overflow-hidden text-white hidden lg:block z-10'>
-                <img src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60' width="32" height="32"></img>                
+            <a href='#' class='w-10 h-10 rounded-lg hidden lg:block'>                
+                <Profile/>
             </a>
         </nav>
     )
