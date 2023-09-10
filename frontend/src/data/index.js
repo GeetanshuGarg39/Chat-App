@@ -1,3 +1,90 @@
+
+const ChatHistory = [
+    {
+        type: "msg",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "divider",
+        text: "Today",
+    },
+    {
+        type: "msg",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: false,
+        outgoing: true,
+    },
+    {
+        type: "msg",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: false,
+        outgoing: true,
+    },
+    {
+        type: "msg",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: true,
+        outgoing: false,
+    },
+
+    {
+        type: "msg",
+        subtype: "img",
+        message: "This is img message!",
+        img: "https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: false,
+        outgoing: true,
+    },
+    {
+        type: "msg",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: false,
+        outgoing: true,
+    },
+    {
+        type: "msg",
+        subtype: "img",
+        message: "This is img message!",
+        img: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        incoming: false,
+        outgoing: true,
+    },
+
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: true,
+        outgoing: false,
+    },
+
+    {
+        type: "msg",
+        subtype: "reply",
+        reply: "This is a reply",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: false,
+        outgoing: true,
+    },
+    {
+        type: "msg",
+        subtype: "reply",
+        reply: "This is a reply",
+        message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim distinctio sequi vel ipsam obcaecati voluptas nemo atque eaque architecto!",
+        incoming: true,
+        outgoing: false,
+    },
+];
+
 const ChatList = [
     {
         id: 0,
@@ -81,4 +168,20 @@ const ChatList = [
     },
 ];
 
-export { ChatList };
+const MsgMenuOptions = [
+    {
+        title: "Reply",
+    },    
+    {
+        title: "Forward message",
+    },    
+    {
+        title: "Report",
+    },
+    {
+        title: "Delete Message",
+    },
+];
+
+
+export { ChatList, ChatHistory, MsgMenuOptions };
