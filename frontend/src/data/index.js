@@ -171,10 +171,10 @@ const ChatList = [
 const MsgMenuOptions = [
     {
         title: "Reply",
-    },    
+    },
     {
         title: "Forward message",
-    },    
+    },
     {
         title: "Report",
     },
@@ -183,5 +183,115 @@ const MsgMenuOptions = [
     },
 ];
 
+const SharedDocs = [
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "doc",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+];
 
-export { ChatList, ChatHistory, MsgMenuOptions };
+const SharedLinks = [
+    {
+        type: "msg",
+        subtype: "link",
+        preview: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "link",
+        preview: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "link",
+        preview: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "link",
+        preview: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "link",
+        preview: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+    {
+        type: "msg",
+        subtype: "link",
+        preview: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi?",
+        incoming: true,
+        outgoing: false,
+    },
+];
+
+
+export { ChatList, ChatHistory, MsgMenuOptions, SharedDocs, SharedLinks };

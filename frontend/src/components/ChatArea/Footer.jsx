@@ -34,8 +34,8 @@ const Footer = () => {
         <div class="flex items-center gap-3 p-4">
             <div class="max-w-fit">
                 <div class="relative" style={{ display: openActions ? "inline-block" : "none" }}>
-                    {Actions.map((e) => (
-                        <button style={{ position: "absolute", top: -e.y }} class="flex items-center justify-center shrink-0 w-12 h-12 bg-blue-400 rounded-full overflow-hidden text-2xl text-white hover:bg-blue-500" type="button">
+                    {Actions.map((e, i) => (
+                        <button key={i} style={{ position: "absolute", top: -e.y }} class="flex items-center justify-center shrink-0 w-12 h-12 bg-blue-400 rounded-full overflow-hidden text-2xl text-white hover:bg-blue-500" type="button">
                             {e.icon}
                         </button>
                     ))}
