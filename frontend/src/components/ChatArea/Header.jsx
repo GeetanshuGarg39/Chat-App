@@ -1,9 +1,15 @@
 import React from 'react'
+import { ToggleProfileBar } from '../../redux/slices/app'
+import { useDispatch } from 'react-redux'
 
 const Header = () => {
+    const dispatch = useDispatch();
     return (
-        <div class="flex items-center h-24 p-6">
-            <div class="w-12 h-12 shrink-0">
+        <div class="flex items-center h-24 p-6" onClick={() => {
+            dispatch(ToggleProfileBar())
+            console.log("I was clicked")
+        }}>
+            <div class="w-12 h-12 shrink-0 cursor-pointer">
                 <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="User" width="64" height="64" class="w-full h-full rounded-full overflow-hidden object-cover" />
             </div>
             <div class="flex flex-col ml-4">

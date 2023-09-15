@@ -1,12 +1,17 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { ToggleProfileBar, UpdateProfileBarType } from "../redux/slices/app";
 
 const ProfileBar = () => {
+  const dispatch = useDispatch();
   return (
     <div class="h-[100vh] bg-slate-100 w-1/5 overflow-y-scroll scrollbar-hide">
-      <div class="flex items-center justify-between h-24 p-6">
+      <div class="flex items-center justify-between h-24 p-6 sticky top-0 z-10 bg-slate-100">
         <h1 class="font-bold text-xl">Profile Details</h1>
-        <button class="flex justify-end">
-          <i class="ph ph-x text-xl"></i>
+        <button class="flex justify-end" onClick={() => {
+          dispatch(ToggleProfileBar());
+        }}>
+          <i class="ph ph-x text-xl hover:text-blue-500"></i>
         </button>
       </div>
       <div class="flex flex-col p-6">
@@ -20,7 +25,7 @@ const ProfileBar = () => {
           />
         </div>
         <div class="flex flex-col items-center mb-4">
-          <h1 class="text-lg font-medium">Shubham Kohli</h1>
+          <h1 class="text-lg font-medium">Your Name</h1>
         </div>
         <div class="flex items-center justify-center gap-4">
           <button class="flex items-center justify-center w-12 h-12 rounded-full overflow-hidden border border-blue-700 ">
@@ -48,10 +53,12 @@ const ProfileBar = () => {
         </p>
       </div>
       <div class="flex flex-col gap-4 p-6 border">
-        <h3 class="flex items-center justify-between ">
-          <span class="font-medium ">Media, Links & Docs</span>{" "}
-          <button>
-            <i class="ph ph-arrow-right text-xl"></i>
+        <h3 class="flex items-center justify-between">
+          <span class="font-medium">Media, Links & Docs</span>{" "}
+          <button onClick={() => {
+            dispatch(UpdateProfileBarType("SHARED"))
+          }}>
+            <i class="ph ph-arrow-right text-xl hover:text-blue-500 cursor-pointer"></i>
           </button>
         </h3>
         <div class="grid grid-cols-3 gap-2">
@@ -91,7 +98,7 @@ const ProfileBar = () => {
             />
           </div>
           <h3 class="">Developers</h3>
-          
+
         </div>
         <div class="flex items-center gap-4 bg-white hover:bg-blue-100 hover:-mx-4 hover:px-6 py-3 px-3 hover:font-semibold rounded-2xl transition-all">
           <div class="w-12 h-12 rounded-full overflow-hidden  flex items-center justify-center">
@@ -102,7 +109,7 @@ const ProfileBar = () => {
             />
           </div>
           <h3 class="">Developers</h3>
-          
+
         </div>
         <div class="flex items-center gap-4 bg-white hover:bg-blue-100 hover:-mx-4 hover:px-6 py-3 px-3 hover:font-semibold rounded-2xl transition-all">
           <div class="w-12 h-12 rounded-full overflow-hidden  flex items-center justify-center">
@@ -113,9 +120,9 @@ const ProfileBar = () => {
             />
           </div>
           <h3 class="">Developers</h3>
-          
+
         </div>
-        
+
       </div>
     </div>
   );
