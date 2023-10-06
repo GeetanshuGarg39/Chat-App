@@ -85,6 +85,177 @@ const ChatHistory = [
     },
 ];
 
+const CallList = [
+    {
+        id: 0,
+        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Addisyn Buck",
+        online: true,
+        incoming: true,
+        missed: false,
+        type: false,
+    },
+    {
+        id: 1,
+        img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Franco Guzman",        
+        online: true,
+        incoming: false,
+        missed: true,
+        type: true,
+    },
+    {
+        id: 2,
+        img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Adelina Sutton",
+        online: false,
+        incoming: true,
+        missed: true,
+        type: true,
+    },
+    {
+        id: 3,
+        img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Ari Gonzalez",
+        online: false,
+        incoming: false,
+        missed: false,
+        type: false,
+    },
+    {        
+        id: 4,
+        img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Maxton Castillo",
+        online: true,
+        incoming: true,
+        missed: false,
+        type: false,
+    },
+    {
+        id: 5,
+        img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Max Peterson",
+        online: false,
+        incoming: false,
+        missed: false,
+        type: false,
+    },
+    {
+        id: 6,
+        img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Forrest Grant",
+        online: true,
+        incoming: true,
+        missed: false,
+        type: true,
+    },
+    {
+        id: 7,
+        img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Bailey Reese",
+        online: false,
+        incoming: false,
+        missed: false,
+        type: true,
+    },
+    {
+        id: 8,
+        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Addisyn Buck",
+        online: true,
+        incoming: true,
+        missed: false,
+        type: true,
+    },
+    {
+        id: 9,
+        img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Bailey Reese",
+        online: false,
+        incoming: false,
+        missed: false,
+        type: false,
+    },
+    {
+        id: 10,
+        img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Max Peterson",
+        online: true,
+        incoming: true,
+        missed: false,
+        type: false,
+    },    
+];
+
+const MembersList = [
+    {
+        id: 0,
+        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Addisyn Buck",
+        online: true,        
+    },
+    {
+        id: 1,
+        img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Franco Guzman",        
+        online: true,        
+    },
+    {
+        id: 2,
+        img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Adelina Sutton",
+        online: false,        
+    },
+    {
+        id: 3,
+        img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Ari Gonzalez",
+        online: false,       
+    },
+    {        
+        id: 4,
+        img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Maxton Castillo",
+        online: true,        
+    },
+    {
+        id: 5,
+        img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Max Peterson",
+        online: false,
+    },
+    {
+        id: 6,
+        img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Forrest Grant",
+        online: true,
+    },
+    {
+        id: 7,
+        img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Bailey Reese",
+        online: false,
+    },
+    {
+        id: 8,
+        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        name: "Addisyn Buck",
+        online: true,
+    },
+    {
+        id: 9,
+        img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Bailey Reese",
+        online: false,
+    },
+    {
+        id: 10,
+        img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Max Peterson",
+        online: true,
+    },    
+];
+
 const ChatList = [
     {
         id: 0,
@@ -294,4 +465,7 @@ const SharedLinks = [
 ];
 
 
-export { ChatList, ChatHistory, MsgMenuOptions, SharedDocs, SharedLinks };
+
+
+
+export { ChatList, ChatHistory, MsgMenuOptions, SharedDocs, SharedLinks, CallList, MembersList };
