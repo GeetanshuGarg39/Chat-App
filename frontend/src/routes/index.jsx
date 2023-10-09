@@ -9,6 +9,7 @@ import DashboardLayout from "../layouts/dashboard";
 import Settings from "../pages/dashboard/Settings";
 import Home from "../pages/home/Home";
 import Call from "../pages/dashboard/Call";
+import UserProfile from "../pages/dashboard/UserProfile";
 
 export default function Router() {
     let routes = useRoutes([
@@ -29,7 +30,8 @@ export default function Router() {
                 { path: "chats", element: <Dashboard/> },
                 { path: "group", element: <Group/> },
                 { path: "settings", element: <Settings/> },
-                { path: "call", element: <Call/> },
+                { path: "call", element: <Call/> },                
+                { path: "profile", element: <UserProfile/> },                
             ]
         }
     ])
