@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const navigate = useNavigate();
 
     const handleClick = () => {
         setOpenMenu(!openMenu);
@@ -26,14 +28,14 @@ const Profile = () => {
                     <div className="z-10 absolute left-10 bottom-10 mt-2 w-48 rounded-lg shadow-lg bg-slate-50 ring-1 ring-black ring-opacity-5">
                         <div className="py-1">
                             <ul role="menu" aria-orientation="vertical" aria-labelledby="profile-positioned-button">
-                                <li onClick={handleClose}>
-                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Profile</a>
+                                <li onClick={()=>{navigate("/profile")}}>
+                                    <p className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Profile</p>
                                 </li>
-                                <li onClick={handleClose}>
-                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Settings</a>
+                                <li onClick={()=>{navigate("/settings")}}>
+                                    <p className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Settings</p>
                                 </li>
                                 <li>
-                                    <button onClick={() => { handleClose(); logoutUser(); }} className="block w-full px-4 py-2 text-sm text-gray-700 text-left hover:bg-blue-100">
+                                    <button onClick={() => { navigate("/auth/login"); logoutUser(); }} className="block w-full px-4 py-2 text-sm text-gray-700 text-left hover:bg-blue-100">
                                         Logout
                                     </button>
                                 </li>
