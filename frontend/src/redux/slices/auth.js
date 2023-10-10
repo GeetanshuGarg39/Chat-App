@@ -25,6 +25,7 @@ const authSlice = createSlice({
         signOut(state, action) {
             state.isLoggedIn = false;
             state.token = "";
+            state.email = "";
         },
         updateEmail(state, action) {            
             state.email = action.payload.email;
@@ -49,6 +50,10 @@ export function LoginUser(body) {
                 isLoggedIn: true,
                 token: response.data.token,
             }))         
+
+            dispatch(authSlice.actions.updateEmail({                
+                email: body.email,
+            }))  
             
             dispatch(showSnackbar({
                 severity: "success",
