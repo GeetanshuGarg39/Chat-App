@@ -1,8 +1,15 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import Image from "../../assets/home-img.avif";
+import { useSelector } from 'react-redux'
 
 const AuthLayout = () => {
+  const { isLoggedIn } = useSelector((state) => state.auth);
+
+    if(isLoggedIn) {
+        return <Navigate to="/app" />
+    }
+
   return (
     <>
       <div className=" text-3xl md:text-3xl mt-4 ml-8 ">👋ChatApp</div>

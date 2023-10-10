@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { LogoutUser } from '../../redux/slices/auth';
+import { useDispatch } from 'react-redux';
 
 const Profile = () => {
+    const dispatch = useDispatch();
     const [openMenu, setOpenMenu] = useState(false);
     const navigate = useNavigate();
 
     const handleClick = () => {
-        setOpenMenu(!openMenu);
+        setOpenMenu(!openMenu);        
     };
 
     const handleClose = () => {
@@ -14,6 +17,7 @@ const Profile = () => {
     };
 
     const logoutUser = () => {
+        dispatch(LogoutUser())
     };
 
     return (
@@ -28,14 +32,14 @@ const Profile = () => {
                     <div className="z-10 absolute left-10 bottom-10 mt-2 w-48 rounded-lg shadow-lg bg-slate-50 ring-1 ring-black ring-opacity-5">
                         <div className="py-1">
                             <ul role="menu" aria-orientation="vertical" aria-labelledby="profile-positioned-button">
-                                <li onClick={()=>{navigate("/profile")}}>
+                                <li onClick={()=>{navigate("/profile"); handleClose(); }}>
                                     <p className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Profile</p>
                                 </li>
-                                <li onClick={()=>{navigate("/settings")}}>
+                                <li onClick={()=>{navigate("/settings"); handleClose(); }}>
                                     <p className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Settings</p>
                                 </li>
                                 <li>
-                                    <button onClick={() => { navigate("/auth/login"); logoutUser(); }} className="block w-full px-4 py-2 text-sm text-gray-700 text-left hover:bg-blue-100">
+                                    <button onClick={() => { logoutUser(); }} className="block w-full px-4 py-2 text-sm text-gray-700 text-left hover:bg-blue-100">
                                         Logout
                                     </button>
                                 </li>

@@ -4,10 +4,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FormProvider from '../../components/FormHook/FormProvider'
 import { CustomInput } from '../../components/FormHook';
+import { LoginUser } from '../../redux/slices/auth';
+import { useDispatch } from "react-redux"
 
 const LoginForm = () => {
-    const [showPassword, setShowPassword] = useState(false);
-
+    const dispatch = useDispatch();
+    const [showPassword, setShowPassword] = useState(false); 
 
     const LoginSchema = Yup.object().shape({
         email: Yup.string().required("Email is required").email("Email must be a valid email address"),
@@ -33,10 +35,11 @@ const LoginForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            console.log(data);
-            // make login api call here          
+            // console.log(data);
+            // make login api call here         
+            dispatch(LoginUser(data)); 
         } catch (error) {
-            console.error(error);
+            console.error(error);            
             reset();
             setError("afterSubmit", {
                 ...error,

@@ -4,8 +4,11 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FormProvider from '../../components/FormHook/FormProvider';
 import { CustomInput } from '../../components/FormHook';
+import { RegisterUser } from '../../redux/slices/auth';
+import { useDispatch } from 'react-redux';
 
 const RegisterForm = () => {
+    const dispatch = useDispatch();
     const [showPassword, setShowPassword] = useState(false);
 
     const RegisterSchema = Yup.object().shape({
@@ -38,8 +41,9 @@ const RegisterForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            console.log(data);
-            // make register api call here          
+            // console.log(data);
+            // make register api call here  
+            dispatch(RegisterUser(data))        
         } catch (error) {
             console.error(error);
             reset();
